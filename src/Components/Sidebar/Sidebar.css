@@ -1,0 +1,62 @@
+.sidebar{
+    height: 100%;
+    width: 20%;
+    border: 2px solid black;
+}
+.Linktag{
+    text-decoration: none;
+    color: black;
+}
+.sidebar .userName{
+    margin-left: 20%;
+    font-size: 200%;
+    font-weight: bold;
+}
+.sidebar-list{
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+}
+.sidebar-list .row{
+    width: 80%;
+    height: 50%;
+    list-style-type: none;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    
+}
+/* .sidebar-list .active{
+    color: red;
+    background-color: black;
+} */
+.active{
+    color:red;
+    background-color: black;
+    text-decoration: none;
+}
+.inactive{
+    color:black;
+    text-decoration: none;
+}
+.sidebar-list .row:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.row .icon{
+    flex: 30%;
+    display: grid;
+    font-size: 40px;
+    place-items: center;
+}
+.row .title{
+    flex: 70%;
+    font-size: 30px;
+    font-weight: bold;
+}
