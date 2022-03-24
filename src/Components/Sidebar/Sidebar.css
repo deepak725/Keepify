@@ -32,7 +32,7 @@
     
 }
 .sidebar-list .active{
-    color: red;
+    color: rgb(255, 200, 18);
     background-color: black;
     text-decoration: none;
 }
