@@ -1,15 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './Login.css'
 
 const Login = ({setUser}) => {
-  
+  let navigate = useNavigate();
   function submithandler(event)
   {
     setUser(true);
     event.preventDefault();
-    
+    navigate("/notes");
   }
 
   return (

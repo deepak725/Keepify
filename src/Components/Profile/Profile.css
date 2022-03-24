@@ -1,0 +1,13 @@
+.profile{
+    position:absolute;
+    margin-left: 20%;
+    flex:80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.profile button{
+    max-width: 10%;
+}

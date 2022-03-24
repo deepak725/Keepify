@@ -1,12 +1,16 @@
 import React from 'react'
 import './Register.css'
+import { Navigate, useNavigate } from 'react-router-dom';
+
 import { NavLink } from 'react-router-dom';
 const Register = ({setUser}) => {
+  let navigate = useNavigate();
     function submithandler(event)
     {
       setUser(true);
       event.preventDefault();
       
+      navigate("/notes");
     }
   
   return (

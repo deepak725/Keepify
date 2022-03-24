@@ -1,6 +1,8 @@
 import Sidebar from "./Components/Sidebar/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import { useNavigate } from 'react-router-dom';
+
 import Notes from "./Components/Notes/Notes";
 import Todo from "./Components/Todo/Todo";
 import Profile from "./Components/Profile/Profile";
@@ -24,7 +26,7 @@ function App() {
         <Routes>
           <Route path="/notes" element={<Notes />} />
           <Route path="/todo" element={<Todo />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile setUser={setUser} />} />
           </Routes></> 
          :
          <>
