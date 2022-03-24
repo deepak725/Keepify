@@ -1,7 +1,8 @@
 .sidebar{
-    height: 100%;
+    height: 100vh;
     width: 20%;
     border: 2px solid black;
+   position: fixed;
 }
 .Linktag{
     text-decoration: none;
@@ -22,7 +23,6 @@
     width: 80%;
     height: 50%;
     list-style-type: none;
-  
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -31,23 +31,23 @@
     margin-left: 10%;
     
 }
-/* .sidebar-list .active{
+.sidebar-list .active{
     color: red;
     background-color: black;
-} */
-.active{
-    color:red;
-    background-color: black;
     text-decoration: none;
 }
-.inactive{
+
+.linktag{
+    text-decoration: none;
     color:black;
-    text-decoration: none;
 }
-.sidebar-list .row:hover{
-    cursor: pointer;
+.linktag :hover{
+    text-decoration: none;
+    color:white;
     background-color: black;
-    color: white;
+}
+.linktag .row:hover{
+    text-decoration: none;
 }
 .row .icon{
     flex: 30%;
@@ -57,6 +57,7 @@
 }
 .row .title{
     flex: 70%;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
 }

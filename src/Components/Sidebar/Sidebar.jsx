@@ -1,17 +1,17 @@
 import React from 'react'
-import { Link ,NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import './Sidebar.css'
 import { SidebarData } from './Sidebardata'
 const Sidebar = () => {
   return (
     <>
         <div className="sidebar" >
-            <p className='userName'>Username</p>
+            <p className='userName'>Deepak</p>
              <ul className='sidebar-list'>
                 {SidebarData.map((val,key) =>{
                      return (
-                   <NavLink  to={val.link}  className={({ isActive }) => (isActive ? 'active' : 'inactive')}  >  
-                   {console.log("hello")}
+                   <NavLink  to={val.link}  className={'linktag'}  >  
+                 
                    <li key={key} className="row" onClick={()=>{
 
                      }}>
