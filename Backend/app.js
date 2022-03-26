@@ -1,4 +1,6 @@
 
+var cors = require("cors");
+
 require('dotenv').config();
 var express = require("express");
 var mongoose = require("mongoose");
@@ -7,8 +9,8 @@ var User = require("./model/usermodel");
 var db = process.env.MONGO_URL
 var app = express();
 var passport = require("passport");
-
-var port = process.env.PORT || 3000;
+app.use(cors());
+var port = process.env.PORT || 3001;
 
 var bcrypt = require('bcrypt')
 var saltRouds = 10
