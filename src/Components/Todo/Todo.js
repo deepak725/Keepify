@@ -98,7 +98,7 @@ const Todo = () => {
             <div className="showItems">
                 <button className="btn effect04" data-sm-link-text="Remove All" onClick={removeAll}>
                     {/*data-sm-link-text => to change the text when hovered */}
-                    <span>Check List</span>
+                    <span>Clear list</span>
                 </button>
             </div>
         </div>

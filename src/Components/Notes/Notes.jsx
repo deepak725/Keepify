@@ -66,12 +66,24 @@ function Notes ({ onAdd }) {
   return (
     <div className="Notes">
       <form>
+      <input
+            value={note.title}
+            type="text"
+            placeholder="Search"
+            name="title"
+            onChange={handleChange}
+           
+          />
+      </form>
+      <form>
+      
         {isExpanded && (
           <input
             value={note.title}
             type="text"
             placeholder="Title"
             name="title"
+            id="title"
             onChange={handleChange}
           />
         )}

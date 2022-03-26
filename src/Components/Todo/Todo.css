@@ -120,12 +120,12 @@
     border-radius: 18px;
   }
   
-  .eachItem:hover {
+  /* .eachItem:hover {
     background:  #090A0D;
     border-radius: 18px;
     box-shadow: -6px -6px 6px rgb(100, 100, 100,0.3),
                 10px 10px 10px rgb(100,100,100,0.3);
-  }
+  } */
   
   .showItems .eachItem h3 {
     padding-left: 1rem;
@@ -156,18 +156,18 @@
   /*  Please Subscribe to ThapaTechnical Youtube Channel
   /* Click Here: https://www.youtube.com/thapatechnical  */
   
-  .eachItem:hover .fa-trash-alt {
+  /* .eachItem:hover .fa-trash-alt {
     color: rgb(214, 47, 61,0.75);
-  }
+  } */
   
-  .eachItem:hover .fa-edit {
+  /* .eachItem:hover .fa-edit {
     color: rgb(100, 214, 47,0.4);
   }
   
   .eachItem:hover h3 {
     color: #646464;
   }
-  
+   */
   .showItems .btn {
     letter-spacing: 0.1em;
     cursor: pointer;
@@ -184,7 +184,7 @@
     text-decoration: none;
   }
   
-  .showItems .effect04 {
+  /* .showItems .effect04 {
     --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
     display: var(--uismLinkDisplay);
     color: #000;
@@ -228,4 +228,4 @@
     letter-spacing: 0.05em;
     -webkit-transform: translateY(0) scale(1, 1);
     transform: translateY(0) scale(1, 1);
-  }
+  } */
