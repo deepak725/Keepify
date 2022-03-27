@@ -2,23 +2,17 @@ import { message } from "antd";
 import React, { useState,useEffect } from "react";
 import { connect } from "react-redux";
 import  {loginRequest} from "../store/Reducers/login";
-import {Dummy} from "./dummy.component";
-// import { Route } from "react-router-dom";
-import {  Route, useHistory } from "react-router-dom";
-
+import { useNavigate } from "react-router"
 const Login =  (props) => {
     const [password,setPassword] = useState("");
     const [email,setEmail] = useState("");
-    const history = useHistory();
-    useEffect(() =>{
-         
+    const navigate = useNavigate();
+    useEffect(() =>{ 
         if(props.status == 200){
-        history.push(`/dashboard`);
-        // <Route exact path='/dashboard' component={Dummy} /> 
-
-        }
+        navigate(`/dashboard`);
+      }
         
-    },[props.token])
+    },[props])
     const handleSubmit = (e) => {
         e.preventDefault();
         let values= {password,email};
@@ -29,6 +23,7 @@ const Login =  (props) => {
        
         props.loginRequest(values);
     }
+    console.log("state"+props.token);
         return (
             <form>
 
@@ -57,9 +52,9 @@ const Login =  (props) => {
     const mapDispatchToProps = {
         loginRequest,
       }
-      const mapStateToProps = (login) => ({
-        status:login.status,
-        token:login.token
+      const mapStateToProps = (state) => ({
+        status:state.login.status,
+        token:state.login.token
     });
     
-      export default connect(mapStateToProps,mapDispatchToProps)(Login);
+      export default (connect(mapStateToProps,mapDispatchToProps)(Login));
