@@ -3,7 +3,7 @@ import { NavLink,useNavigate } from "react-router-dom";
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './Login.css'
 
-const Login = ({setUser}) => {
+const Login = ({setUser,user}) => {
   let navigate = useNavigate();
   function submithandler(event)
   {

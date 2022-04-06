@@ -27,7 +27,8 @@ function App() {
           <Route path="/notes" element={<Notes />} />
           <Route path="/todo" element={<Todo />} />
           <Route path="/profile" element={<Profile setUser={setUser} />} />
-          </Routes></> 
+        </Routes>
+          </> 
          :
          <>
          <Sidebar setUser={user} SidebarData={SidebarData2} />
@@ -37,7 +38,7 @@ function App() {
         </Routes>
         </>
       }
-       
+      
          
       
       

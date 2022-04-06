@@ -8,11 +8,13 @@ const Sidebar = ({user,SidebarData}) => {
             <p className='userName'>Keepify</p>
              <ul className='sidebar-list'>
               
-                
+                {/*  title: "Login",
+        link : "/",
+        icon : <ImUser /> */}
                 {SidebarData.map((val,key) =>{
                      return (
 
-                   <NavLink  to={val.link}  className={'linktag'}  >  
+                   <NavLink  to={val.link}  className={'linktag'}  > 
                  
                    <li key={key} className="row" onClick={()=>{
 
