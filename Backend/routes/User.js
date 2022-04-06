@@ -5,7 +5,8 @@ const jsonwt = require("jsonwebtoken");
 
 var router = express.Router();
 
-var User = require("../model/usermodel");
+var {User} = require("../Model/userModel");
+
 var key = require("../mysetup/myurl");
 const saltRounds = 10;
 

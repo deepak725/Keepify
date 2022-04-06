@@ -2,9 +2,9 @@ import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; 
 import { BrowserRouter, Router, Route, Link } from "react-router-dom";
-import Login from "./components/login.component";
+import Login from "./Components/login.component";
 import {Routes} from "react-router-dom";
-import SignUp from "./components/signup.component";
+import SignUp from "./Components/signup.component";
 
 function App() {
   return (
