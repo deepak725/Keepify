@@ -2,7 +2,7 @@ const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const mongoose = require("mongoose");
 
-var User = require("../Model/userModel");
+var {User} = require("../Model/userModel");
 const myKey = require("../mysetup/myurl");
 
 var opts = {};
@@ -12,9 +12,11 @@ opts.secretOrKey = myKey.secret;
 module.exports = passport => {
   passport.use(
     new JwtStrategy(opts, (jwt_payload, done) => {
+      
       User.findById(jwt_payload.id)
         .then(person => {
           if (person) {
+            
             return done(null, person);
           }
           return done(null, false);

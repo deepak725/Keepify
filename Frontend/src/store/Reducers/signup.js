@@ -14,11 +14,12 @@ export const signupRequest = (values) => (dispatch,getState)=>{
     
   });
  
-  return axios.post(`http://localhost:3010/api/signup/`, data,{
+  return axios.post(`http://localhost:3001/api/signup/`, data,{
     
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin":"*"
+      "Access-Control-Allow-Origin":"*",
+      'Authorization':localStorage.getItem("token")
     }})
   .then(json => {
     

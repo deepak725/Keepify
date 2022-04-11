@@ -21,11 +21,12 @@ export const loginRequest = (values) => (dispatch,getState)=>{
     password: values.password,
   });
   console.log("here before axios");
-  return axios.post(`http://localhost:3010/api/login/`,data, {
+  return axios.post(`http://localhost:3001/api/login/`,data, {
 
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin":"*"
+      "Access-Control-Allow-Origin":"*",
+      'Authorization':localStorage.getItem("token")
     },
    
   })
